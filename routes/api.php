@@ -30,5 +30,5 @@ Route::post('/register',[RegisterController::class,"register"]);
 Route::post('/login',[LoginController::class,"Connecting"]);
 Route::post("/upload",[UploadController::class,"store"]);
 Route::get('/test',function(){
-       return "helllo test";
+       return "helllo test , one two";
 });
