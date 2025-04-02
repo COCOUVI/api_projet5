@@ -32,3 +32,4 @@ Route::post("/upload",[UploadController::class,"store"]);
 Route::get('/test',function(){
        return "helllo test , one two";
 });
+Route::post('/logout',[LoginController::class,"destroy_connect"]);

@@ -29,4 +29,15 @@ class LoginController extends Controller
         }
    
     }
+    public function destroy_connect(Request $request){
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return response()->json([
+            "message" => "Vous êtes déconnecté avec succès",
+        ], 200); // Code d'état 200 (OK)
+    }
 }

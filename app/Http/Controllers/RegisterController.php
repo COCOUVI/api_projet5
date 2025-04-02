@@ -80,7 +80,7 @@ class RegisterController extends Controller
                         $tuteur->save();
                     };
                         return response()->json([
-                        "message"=>"tous donner enregistrer",
+                        "message"=>"vos informations ont été enregistrée ave success",
                          "status"=>201
     
                         ]);                 
