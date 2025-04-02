@@ -15,6 +15,7 @@ class LoginController extends Controller
             return response()->json([
                 "status"=>403,
                 "message"=>"User is login",
+                "username"=>$user->name,
                 "token"=>$token
             ]);
         } else{
