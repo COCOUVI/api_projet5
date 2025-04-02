@@ -16,6 +16,7 @@ class LoginController extends Controller
                 "status"=>403,
                 "message"=>"User is login",
                 "username"=>$user->name,
+                "statut"=>$user->statut,
                 "token"=>$token
             ]);
         } else{
