@@ -33,4 +33,4 @@ Route::get('/test',function(){
        return "helllo test , one two";
 });
 
-Route::post('/logout',[LoginController::class,"destroy_connect"])->middleweare('auth');
+Route::post('/logout',[LoginController::class,"destroy_connect"])->middleware('auth');
